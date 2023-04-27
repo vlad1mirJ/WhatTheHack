@@ -3,7 +3,9 @@ targetScope = 'subscription'
 param location string = 'northeurope'
 param prefix string = 'cloud'
 
-param webAppName string = '${prefix}devops-dev'
+param targetEnv string = 'prod'
+
+param webAppName string = '${prefix}devops-${targetEnv}'
 param hostingPlanName string = '${prefix}devops-asp'
 param appInsightsName string = '${prefix}devops-ai'
 param sku string = 'S1'
