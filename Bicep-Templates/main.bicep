@@ -3,7 +3,7 @@ targetScope = 'subscription'
 param location string = 'northeurope'
 param prefix string = 'cloud'
 
-param targetEnv string = 'test'
+param targetEnv string = 'prod'
 
 param webAppName string = '${prefix}devops-${targetEnv}'
 param hostingPlanName string = '${prefix}devops-asp'
